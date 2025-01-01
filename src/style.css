@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+h1{
+	padding: 4rem;
+}
+.app {
+	max-width: 110rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	font-family: 'Roboto';
+	line-height: 1.5;
+	color: #333;
+	background-color: #ffebb3;
+	font-size: 1.4rem;
+}
+.app ul {
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+	margin: 0 auto;
+}
+.app  ul li {
+	list-style: none;
+	border: 2px solid #cac2c2;
+	padding: 2rem;
+	height: 15rem;
+	overflow: auto;
+	position: relative;
+}
+.app ul li h3 {
+	text-align: center;
+}
+.app .input, .app .input .input-first {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2rem 0;
+	position: relative;
+}
+
+
+.app .input input, .app .input textarea {
+	padding: 1.5rem;
+	border: 1px solid #e7e7e7;
+	overflow: auto;
+}
+.app .input input:focus, .app .input textarea:focus {
+	outline: 1rem solid #e7e7e72c;
+	border: none;
+}
+.app .input textarea {
+	padding-right: 10rem;
+}
+.app .input button {
+	position: absolute;
+	height: 6rem;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	right: 1rem;
+	bottom: 3rem;
+	cursor: pointer;
+	border: 1px solid gray;
+	background-color: #7950f2;
+	font-weight: bold;
+	color: #fff;
+}
+.app .input button:hover {
+	background-color: #4e2db0;
+}
+.delete-btn {
+	position: absolute;
+	 bottom: 1rem;
+	 right: 1rem;
+	 border-radius: 1rem;
+	 padding: 0.4rem;
+	 background-color: red;
+	 color: #fff;
+	 font-weight: 300;
+	 letter-spacing: 2px;
+	 font-size: 0.5rem;
+	 cursor: pointer;
+}
+
+@media(max-width: 600px) {
+	.app ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
